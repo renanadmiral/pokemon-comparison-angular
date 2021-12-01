@@ -1,0 +1,20 @@
+<main>
+  <app-pokemon-card
+    *ngIf="pokemonsData"
+    [data]="pokemonsData"
+    [maxStat]="maxStat"
+    [chosenStat] = "chosenStat"
+  ></app-pokemon-card>
+
+  <div>
+    <select (change)="changeSelectedStat($event)">
+      <option selected disabled>select a stat</option>
+      <option value="hp">hp</option>
+      <option value="attack">attack</option>
+      <option value="defense">defense</option>
+      <option value="speed">speed</option>
+    </select>
+    <button (click)="defineMaxStat()">Winner</button>
+  </div>
+
+</main>

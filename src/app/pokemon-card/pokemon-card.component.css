@@ -1,0 +1,50 @@
+.card-list {
+  display: flex;
+  list-style: none;
+  width: 100vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  column-gap: 2vw;
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.stats li {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 3px 0;
+}
+
+.electric {
+  background-color: rgb(255 221 101);
+}
+
+.fire {
+  background-color: rgb(255 129 101);
+}
+
+.ice {
+  background-color: rgb(101 181 255);
+}
+
+.loser {
+  background-color: gray;
+}
